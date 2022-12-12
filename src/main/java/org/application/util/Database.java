@@ -1,10 +1,7 @@
 package org.application.util;
 
 import javax.swing.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Database {
 
@@ -20,7 +17,9 @@ public class Database {
             statement.setQueryTimeout(30);  // set timeout to 30 sec.
 
             statement.executeUpdate("drop table if exists records");
-            statement.executeUpdate("create table records (record_id STRING, plate_number string, start_timestamp TIMESTAMP, end_timestamp TIMESTAMP, status STRING, spot_id STRING, vehicle_type STRING,  amount DOUBLE)");
+            statement.executeUpdate("create table records (record_id STRING, plate_number STRING, start_timestamp STRING, end_timestamp STRING, record_status STRING, spot_id STRING, vehicle_type STRING,  amount DOUBLE)");
+            ParkingLot.init();
+
         } catch (SQLException ex){
             JOptionPane.showMessageDialog(null, ex.toString(), "Error", JOptionPane.ERROR_MESSAGE);
         }

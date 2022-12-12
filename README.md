@@ -1,5 +1,8 @@
 # INFO5100-PROJECT
 
+This is an implementation for Object-Oriented Design question "Design a parking lot" with MVC(Model, View, Controller) pattern
+
+
 ## Installation
 
 
