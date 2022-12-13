@@ -1,6 +1,6 @@
 # INFO5100-PROJECT
 
-This is an implementation for famouse Object-Oriented Design question "Design a parking lot"
+This is an implementation for famous Object-Oriented Design question "Design a parking lot"
 
 
 ## Installation
