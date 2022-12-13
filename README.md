@@ -43,8 +43,8 @@ Records
 |-----------------|-----------|
 | record_id       | STRING    |
 | plate_number    | STRING    |
-| start_timestamp | TIMESTAMP |
-| end_timestamp   | TIMESTAMP |
+| start_timestamp | STRING |
+| end_timestamp   | STRING |
 | record_status   | STRING    |
 | spot_id         | STRING    |
 | vehicle_type    | STRING    |
