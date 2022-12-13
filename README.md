@@ -19,7 +19,7 @@ Or import the code to Intellj and run Main.java
 - SQLite integration and database mapper layer implementation with SQL query
 - File structure convention
 - Name convention
-- S.L.I.O.D Principle
+- S.O.L.I.D Principle
 - Object-Oriented Design Pattern
 
 
