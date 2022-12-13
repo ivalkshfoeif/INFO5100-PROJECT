@@ -16,7 +16,7 @@ Or import the code to Intellj and run Main.java
 ## Highlights
 
 - User-friendly UI and promotion
-- Sqlite integration and Database Mapper implementation with SQL query
+- SQLite integration and database mapper layer implementation with SQL query
 - File structure convention
 - Name convention
 - S.L.I.O.D Principle
