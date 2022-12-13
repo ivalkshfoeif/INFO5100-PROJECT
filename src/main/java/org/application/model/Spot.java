@@ -63,11 +63,11 @@ public class Spot {
         return spot;
     }
 
-    public static void updateSpotStatusToSpotStatus(Spot spot, SpotStatus spotStatus){
+    public static void updateSpotStatusToSpotStatus(String spotId, SpotStatus spotStatus){
         try {
             PreparedStatement ps = connection.prepareStatement("UPDATE spots SET spot_status = ? WHERE spot_id = ?");
             ps.setString(1, spotStatus.value);
-            ps.setString(2, spot.getSpotId());
+            ps.setString(2, spotId);
             ps.executeUpdate();
             System.out.println(ps.toString());
         } catch (SQLException ex){
@@ -90,6 +90,7 @@ public class Spot {
         System.out.println(spotType.value + " = " + count);
         return count;
     }
+
 
 
 

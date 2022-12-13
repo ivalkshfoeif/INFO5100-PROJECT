@@ -19,6 +19,16 @@ public class ParkingLot {
 
     private static Map<VehicleType, SpotType> vehicleTypeSpotTypeMap;
 
+    private static Map<String, VehicleType> stringVehicleTypeMap;
+
+    public static Map<VehicleType, SpotType> getVehicleTypeSpotTypeMap() {
+        return vehicleTypeSpotTypeMap;
+    }
+
+    public static Map<String, VehicleType> getStringVehicleTypeMap() {
+        return stringVehicleTypeMap;
+    }
+
     public static void init(){
 
         capacities = new HashMap<>();
@@ -26,6 +36,18 @@ public class ParkingLot {
         capacities.put(SpotType.SMALL, 10);
         capacities.put(SpotType.MEDIUM, 5);
         capacities.put(SpotType.LARGE, 1);
+
+        vehicleTypeSpotTypeMap = new HashMap<>();
+
+        vehicleTypeSpotTypeMap.put(VehicleType.MOTORBIKE, SpotType.SMALL);
+        vehicleTypeSpotTypeMap.put(VehicleType.CAR, SpotType.MEDIUM);
+        vehicleTypeSpotTypeMap.put(VehicleType.VAN, SpotType.LARGE);
+
+        stringVehicleTypeMap = new HashMap<>();
+        stringVehicleTypeMap.put("MOTORBIKE", VehicleType.MOTORBIKE);
+        stringVehicleTypeMap.put("CAR", VehicleType.CAR);
+        stringVehicleTypeMap.put("VAN", VehicleType.VAN);
+
 
         try{
             Connection connection = Database.getConnection();

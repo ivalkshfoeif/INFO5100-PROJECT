@@ -1,10 +1,15 @@
 # INFO5100-PROJECT
 
-This is an implementation for Object-Oriented Design question "Design a parking lot" with MVC(Model, View, Controller) pattern
+This is an implementation for Object-Oriented Design question "Design a parking lot"
 
 
 ## Installation
 
+The project is based on Maven and Java 11 or higher version
+
+You can find the jar file here : https://drive.google.com/file/d/1mB37edebWXx0UzOqc4pRd1ox-onALsbN/view?usp=sharing
+
+Or import the code to Intellj and run Main.java
 
 
 ## Database 
